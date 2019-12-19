@@ -1,6 +1,6 @@
 # MIME Confusion Attack on Midori Browser
 
-This PoC describes a MIME confusion attack on Midori Browser 0.5.1.
+This PoC describes a MIME confusion attack on Midori Browser 0.5.11 and Internet Explorer 11.535.18362.0
 
 ## About the MIME Confusion Attack
 
@@ -9,6 +9,9 @@ Scanning the content of a file allows web browsers to detect the format of a fil
 Consider a web application which allows users to upload image files but does not verify that the user actually uploaded a valid image, e.g., the web application just checks for a valid file extension. This lack of verification allows an attacker to craft and upload an image which contains scripting content. The browser then renders the content as HTML opening the possibility for a Cross-Site Scripting attack (XSS). Even worse, some files can even be polyglots, which means their content satisfies two content types. E.g., a GIF can be crafted in a way to be valid image and also valid JavaScript and the correct interpretation of the file solely depends on the context.
 
 ## About Midori Browser
+
+Download: https://www.midori-browser.org/download/
+
 
 ## Step by Step Proof of Concept
 
@@ -29,6 +32,6 @@ And the following HTML / JS code:
 
 I hosted at http://joomla.sejalivre.org
 
-I downloaded and installed Browser Midori 0.5.1 on Windows 10 and simply accessed the page mentioned above.
+I downloaded and installed Browser Midori 0.5.1 on Windows 10 and simply accessed the page mentioned above on both browsers (Midori and IE).
 
 As shown, we find that the browser has no implementation against MIME confusion attacks
