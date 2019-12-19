@@ -1,4 +1,4 @@
-# MIME Confusion Attack on Midori Browser
+# MIME Confusion Attack
 
 This PoC describes a MIME confusion attack on: 
 
