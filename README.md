@@ -22,7 +22,7 @@ Download: https://www.midori-browser.org/download/
 
 ## Step by Step Proof of Concept
 
-I used a polyglot GIF with a built-in JavaScript code (available at: http://portswigger-labs.net/polyglot/jpeg/xss_within_header_compressed_small_logo.jpg):
+As PoC i used a polyglot GIF with a built-in JavaScript code (available at: http://portswigger-labs.net/polyglot/jpeg/xss_within_header_compressed_small_logo.jpg):
 
 ```
  */=alert("Burp rocks.")/*
@@ -42,3 +42,18 @@ I hosted at http://joomla.sejalivre.org
 Simply accessed the page mentioned above on browsers.
 
 As shown, we find that the browsers has no implementation against MIME confusion attacks
+
+## Midori
+
+![alt](https://ciber.sejalivre.org/WP/MD-1.png)
+![alt](https://ciber.sejalivre.org/WP/MD-2.png)
+
+## Internet Explorer
+
+![alt](https://ciber.sejalivre.org/WP/IE-1.png)
+![alt](https://ciber.sejalivre.org/WP/IE-2.png)
+
+## Safari
+
+![alt](https://ciber.sejalivre.org/WP/SF-1.png)
+![alt](https://ciber.sejalivre.org/WP/SF-2.png)
