@@ -1,6 +1,13 @@
 # MIME Confusion Attack on Midori Browser
 
-This PoC describes a MIME confusion attack on Midori Browser 0.5.11 and Internet Explorer 11.535.18362.0
+This PoC describes a MIME confusion attack on: 
+
+* Midori Browser 0.5.11 on Windows 10
+
+* Internet Explorer 11.535.18362.0 on Windows 10
+
+* Safari 10.1.2 (12603.3.8) on MacOS Sierra
+
 
 ## About the MIME Confusion Attack
 
@@ -32,6 +39,6 @@ And the following HTML / JS code:
 
 I hosted at http://joomla.sejalivre.org
 
-I downloaded and installed Browser Midori 0.5.1 on Windows 10 and simply accessed the page mentioned above on both browsers (Midori and IE).
+Simply accessed the page mentioned above on browsers.
 
-As shown, we find that the browser has no implementation against MIME confusion attacks
+As shown, we find that the browsers has no implementation against MIME confusion attacks
