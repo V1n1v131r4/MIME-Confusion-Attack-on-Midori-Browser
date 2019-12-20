@@ -2,7 +2,7 @@
 
 This PoC describes a MIME confusion attack on: 
 
-* Midori Browser 0.5.11 on Windows 10
+* Midori Browser 0.5.11 on Windows 10  // I published this CVE-2019-19916 (https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2019-19916)
 
 * Internet Explorer 11.535.18362.0 on Windows 10
 
